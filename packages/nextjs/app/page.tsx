@@ -1,8 +1,6 @@
 // pages/index.tsx
 import React from "react";
-import "./components/images/0_yGBbg7X2ZhaoS1Ci.png";
-import "./components/images/Blockchain1.webp";
-import "./components/images/machine-learning-infographic_35632-101.png";
+
 
 const LandingPage = () => {
   return (
@@ -10,7 +8,7 @@ const LandingPage = () => {
       {/* Navbar */}
       <nav className="p-4 bg-gray-800">
         <div className="container flex items-center justify-between mx-auto">
-          <div className="text-2xl font-bold text-white">HydroChain</div>
+          <div className="text-2xl font-bold text-white"><span className="text-blue-500 ">hydro</span>Chain</div>
           <div className="space-x-4">
             <a href="/dashboard" className="text-gray-300 hover:text-white">
               Dashboard
@@ -26,7 +24,7 @@ const LandingPage = () => {
       </nav>
 
       {/* Header */}
-      <header className="py-20 text-white bg-blue-600">
+      <header className="py-20 text-white bg-gradient-to-r from-black to-blue-600">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl font-bold">Welcome to HydroChain</h1>
           <p className="mt-4 text-xl">Predict rainfall with advanced data analytics and blockchain technology.</p>
@@ -62,9 +60,12 @@ const LandingPage = () => {
             <span className="text-xl">Next.js</span>
             <span className="text-xl">Tailwind CSS</span>
             <span className="text-xl">Flask</span>
+            <span className="text-xl">Solidity</span>
+            <span className="text-xl">ML Models(ARIMA, rasterio)</span>
             <span className="text-xl">Matplotlib</span>
             <span className="text-xl">Ethereum</span>
             <span className="text-xl">Leaflet</span>
+
           </div>
         </div>
       </section>

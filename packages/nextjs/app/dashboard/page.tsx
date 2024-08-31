@@ -26,7 +26,7 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen py-12 text-white bg-gradient-to-r from-black via-blue-900 to-blue-400">
+    <div className="flex flex-col items-center min-h-screen py-12 text-white bg-gradient-to-r from-black to-blue-900">
       <h1 className="mb-8 text-5xl font-bold">HydroChain Dashboard</h1>
       <p className="mb-8 text-lg font-bold">Welcome to the future of geospatal analysis. Try Our Engine.</p>
       <p className="mb-8 text-lg font-bold">Enter any location in the World</p>
