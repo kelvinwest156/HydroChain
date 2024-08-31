@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/HydroChain.sol": {
+      "content": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.8.0 <0.9.0;\r\n\r\ncontract HydroChain {\r\n    // Struct to store rainfall data submissions\r\n    struct RainfallData {\r\n        uint256 timestamp;       // Timestamp when the data was submitted\r\n        uint256 rainfallAmount;  // Rainfall amount in millimeters\r\n        address contributor;     // Address of the user who submitted the data\r\n        bool validated;          // Whether the data has been validated\r\n    }\r\n\r\n    // Array of all submitted rainfall data\r\n    RainfallData[] public rainfallData;\r\n\r\n    // Mapping from user address to their total points accumulated\r\n    mapping(address => uint256) public userPoints;\r\n\r\n    // Mapping from user address to their submitted data count\r\n    mapping(address => uint256) public userSubmissions;\r\n\r\n    // Event emitted when rainfall data is submitted\r\n    event DataSubmitted(uint256 indexed dataId, address indexed contributor, uint256 rainfallAmount);\r\n\r\n    // Event emitted when data is validated\r\n    event DataValidated(uint256 indexed dataId, address indexed validator);\r\n\r\n    // Event emitted when points are awarded\r\n    event PointsAwarded(address indexed user, uint256 points);\r\n\r\n    constructor() {\r\n        // Constructor can be used for initial setup if needed\r\n    }\r\n\r\n    // Function to submit rainfall data\r\n    function submitRainfallData(uint256 _rainfallAmount) external {\r\n        // Create a new RainfallData struct and add it to the array\r\n        rainfallData.push(RainfallData({\r\n            timestamp: block.timestamp,\r\n            rainfallAmount: _rainfallAmount,\r\n            contributor: msg.sender,\r\n            validated: false\r\n        }));\r\n\r\n        // Increment the user's submission count\r\n        userSubmissions[msg.sender]++;\r\n\r\n        // Emit an event for the new data submission\r\n        emit DataSubmitted(rainfallData.length - 1, msg.sender, _rainfallAmount);\r\n    }\r\n\r\n    // Function to validate rainfall data\r\n    function validateRainfallData(uint256 _dataId) external {\r\n        require(_dataId < rainfallData.length, \"Invalid data ID\");\r\n\r\n        // Mark the data as validated\r\n        RainfallData storage data = rainfallData[_dataId];\r\n        data.validated = true;\r\n\r\n        // Award 10 points to the contributor for validated data\r\n        uint256 points = 10;\r\n        userPoints[data.contributor] += points;\r\n\r\n        // Emit events for data validation and points awarded\r\n        emit DataValidated(_dataId, msg.sender);\r\n        emit PointsAwarded(data.contributor, points);\r\n    }\r\n\r\n    // Function to get a user's total points\r\n    function getUserPoints(address _user) external view returns (uint256) {\r\n        return userPoints[_user];\r\n    }\r\n}\r\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

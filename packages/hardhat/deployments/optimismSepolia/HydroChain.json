@@ -1,0 +1,319 @@
+{
+  "address": "0x73F40E4B1d66c11791A15EE9857e0693B557db2c",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "dataId",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "contributor",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "rainfallAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "DataSubmitted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "dataId",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "validator",
+          "type": "address"
+        }
+      ],
+      "name": "DataValidated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "points",
+          "type": "uint256"
+        }
+      ],
+      "name": "PointsAwarded",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "getUserPoints",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "rainfallData",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "rainfallAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "contributor",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "validated",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_rainfallAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "submitRainfallData",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "userPoints",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "userSubmissions",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_dataId",
+          "type": "uint256"
+        }
+      ],
+      "name": "validateRainfallData",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x6651f988c7cae1e118040b15779faff6e601f6fb99e3e02c5862ca9b58c3db7f",
+  "receipt": {
+    "to": null,
+    "from": "0x906B80b041e613fBb8d945975B9f541215ed0cc9",
+    "contractAddress": "0x73F40E4B1d66c11791A15EE9857e0693B557db2c",
+    "transactionIndex": 3,
+    "gasUsed": "324584",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xbecaa332284aedbf553af3721efeb1df2486cce7c915b7681d6a7893b147d309",
+    "transactionHash": "0x6651f988c7cae1e118040b15779faff6e601f6fb99e3e02c5862ca9b58c3db7f",
+    "logs": [],
+    "blockNumber": 16573654,
+    "cumulativeGasUsed": "1517546",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "3c3d5213f7f281d835ef649343537a7e",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"dataId\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"contributor\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"rainfallAmount\",\"type\":\"uint256\"}],\"name\":\"DataSubmitted\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"dataId\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"validator\",\"type\":\"address\"}],\"name\":\"DataValidated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"points\",\"type\":\"uint256\"}],\"name\":\"PointsAwarded\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"getUserPoints\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"rainfallData\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"rainfallAmount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"contributor\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"validated\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_rainfallAmount\",\"type\":\"uint256\"}],\"name\":\"submitRainfallData\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"userPoints\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"userSubmissions\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_dataId\",\"type\":\"uint256\"}],\"name\":\"validateRainfallData\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/HydroChain.sol\":\"HydroChain\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/HydroChain.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity >=0.8.0 <0.9.0;\\r\\n\\r\\ncontract HydroChain {\\r\\n    // Struct to store rainfall data submissions\\r\\n    struct RainfallData {\\r\\n        uint256 timestamp;       // Timestamp when the data was submitted\\r\\n        uint256 rainfallAmount;  // Rainfall amount in millimeters\\r\\n        address contributor;     // Address of the user who submitted the data\\r\\n        bool validated;          // Whether the data has been validated\\r\\n    }\\r\\n\\r\\n    // Array of all submitted rainfall data\\r\\n    RainfallData[] public rainfallData;\\r\\n\\r\\n    // Mapping from user address to their total points accumulated\\r\\n    mapping(address => uint256) public userPoints;\\r\\n\\r\\n    // Mapping from user address to their submitted data count\\r\\n    mapping(address => uint256) public userSubmissions;\\r\\n\\r\\n    // Event emitted when rainfall data is submitted\\r\\n    event DataSubmitted(uint256 indexed dataId, address indexed contributor, uint256 rainfallAmount);\\r\\n\\r\\n    // Event emitted when data is validated\\r\\n    event DataValidated(uint256 indexed dataId, address indexed validator);\\r\\n\\r\\n    // Event emitted when points are awarded\\r\\n    event PointsAwarded(address indexed user, uint256 points);\\r\\n\\r\\n    constructor() {\\r\\n        // Constructor can be used for initial setup if needed\\r\\n    }\\r\\n\\r\\n    // Function to submit rainfall data\\r\\n    function submitRainfallData(uint256 _rainfallAmount) external {\\r\\n        // Create a new RainfallData struct and add it to the array\\r\\n        rainfallData.push(RainfallData({\\r\\n            timestamp: block.timestamp,\\r\\n            rainfallAmount: _rainfallAmount,\\r\\n            contributor: msg.sender,\\r\\n            validated: false\\r\\n        }));\\r\\n\\r\\n        // Increment the user's submission count\\r\\n        userSubmissions[msg.sender]++;\\r\\n\\r\\n        // Emit an event for the new data submission\\r\\n        emit DataSubmitted(rainfallData.length - 1, msg.sender, _rainfallAmount);\\r\\n    }\\r\\n\\r\\n    // Function to validate rainfall data\\r\\n    function validateRainfallData(uint256 _dataId) external {\\r\\n        require(_dataId < rainfallData.length, \\\"Invalid data ID\\\");\\r\\n\\r\\n        // Mark the data as validated\\r\\n        RainfallData storage data = rainfallData[_dataId];\\r\\n        data.validated = true;\\r\\n\\r\\n        // Award 10 points to the contributor for validated data\\r\\n        uint256 points = 10;\\r\\n        userPoints[data.contributor] += points;\\r\\n\\r\\n        // Emit events for data validation and points awarded\\r\\n        emit DataValidated(_dataId, msg.sender);\\r\\n        emit PointsAwarded(data.contributor, points);\\r\\n    }\\r\\n\\r\\n    // Function to get a user's total points\\r\\n    function getUserPoints(address _user) external view returns (uint256) {\\r\\n        return userPoints[_user];\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x8d70844a72969311e1a87b28ca6c2f2659a9ecc632d8bd751b72a514bcf179da\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506104e8806100206000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c80632a35465614610067578063aeefe31f1461007c578063be56ce27146100b8578063ea6331aa146100fc578063ee2a633b1461011c578063f50ddbc71461012f575b600080fd5b61007a6100753660046103f8565b61014f565b005b6100a561008a366004610411565b6001600160a01b031660009081526001602052604090205490565b6040519081526020015b60405180910390f35b6100cb6100c63660046103f8565b61028a565b6040516100af949392919093845260208401929092526001600160a01b031660408301521515606082015260800190565b6100a561010a366004610411565b60026020526000908152604090205481565b61007a61012a3660046103f8565b6102d2565b6100a561013d366004610411565b60016020526000908152604090205481565b604080516080810182524281526020808201848152338385018181526000606086018181528154600181018355828052965160039097027f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e56381019790975593517f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e56487015590517f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e565909501805493511515600160a01b026001600160a81b03199094166001600160a01b039690961695909517929092179093559182526002905290812080549161023e83610457565b9091555050600054339061025490600190610470565b6040518381527fc2af2237b2cd9e2e41495402b40b373744eff683f8123d61e07c0291e166dbe79060200160405180910390a350565b6000818154811061029a57600080fd5b60009182526020909120600390910201805460018201546002909201549092506001600160a01b03811690600160a01b900460ff1684565b60005481106103195760405162461bcd60e51b815260206004820152600f60248201526e125b9d985b1a590819185d18481251608a1b604482015260640160405180910390fd5b600080828154811061032d5761032d610489565b600091825260208083206002600390930201918201805460ff60a01b198116600160a01b179091556001600160a01b0316835260019052604082208054919350600a92839261037d90849061049f565b9091555050604051339084907f959126fc0eba46abd870ad2b045fdd31e0c4a339b12009f194b29cd89d9c88af90600090a360028201546040518281526001600160a01b03909116907f900825d4808e50002c1a3614c809eb06d2d7142338f0dec06ed9a4057c8a8c999060200160405180910390a2505050565b60006020828403121561040a57600080fd5b5035919050565b60006020828403121561042357600080fd5b81356001600160a01b038116811461043a57600080fd5b9392505050565b634e487b7160e01b600052601160045260246000fd5b60006001820161046957610469610441565b5060010190565b8181038181111561048357610483610441565b92915050565b634e487b7160e01b600052603260045260246000fd5b808201808211156104835761048361044156fea2646970667358221220492172f0a09f6e7c1e8f09fea59c28a63bcbb2ba5cbfdf74172499b30dce36c164736f6c63430008110033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c80632a35465614610067578063aeefe31f1461007c578063be56ce27146100b8578063ea6331aa146100fc578063ee2a633b1461011c578063f50ddbc71461012f575b600080fd5b61007a6100753660046103f8565b61014f565b005b6100a561008a366004610411565b6001600160a01b031660009081526001602052604090205490565b6040519081526020015b60405180910390f35b6100cb6100c63660046103f8565b61028a565b6040516100af949392919093845260208401929092526001600160a01b031660408301521515606082015260800190565b6100a561010a366004610411565b60026020526000908152604090205481565b61007a61012a3660046103f8565b6102d2565b6100a561013d366004610411565b60016020526000908152604090205481565b604080516080810182524281526020808201848152338385018181526000606086018181528154600181018355828052965160039097027f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e56381019790975593517f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e56487015590517f290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e565909501805493511515600160a01b026001600160a81b03199094166001600160a01b039690961695909517929092179093559182526002905290812080549161023e83610457565b9091555050600054339061025490600190610470565b6040518381527fc2af2237b2cd9e2e41495402b40b373744eff683f8123d61e07c0291e166dbe79060200160405180910390a350565b6000818154811061029a57600080fd5b60009182526020909120600390910201805460018201546002909201549092506001600160a01b03811690600160a01b900460ff1684565b60005481106103195760405162461bcd60e51b815260206004820152600f60248201526e125b9d985b1a590819185d18481251608a1b604482015260640160405180910390fd5b600080828154811061032d5761032d610489565b600091825260208083206002600390930201918201805460ff60a01b198116600160a01b179091556001600160a01b0316835260019052604082208054919350600a92839261037d90849061049f565b9091555050604051339084907f959126fc0eba46abd870ad2b045fdd31e0c4a339b12009f194b29cd89d9c88af90600090a360028201546040518281526001600160a01b03909116907f900825d4808e50002c1a3614c809eb06d2d7142338f0dec06ed9a4057c8a8c999060200160405180910390a2505050565b60006020828403121561040a57600080fd5b5035919050565b60006020828403121561042357600080fd5b81356001600160a01b038116811461043a57600080fd5b9392505050565b634e487b7160e01b600052601160045260246000fd5b60006001820161046957610469610441565b5060010190565b8181038181111561048357610483610441565b92915050565b634e487b7160e01b600052603260045260246000fd5b808201808211156104835761048361044156fea2646970667358221220492172f0a09f6e7c1e8f09fea59c28a63bcbb2ba5cbfdf74172499b30dce36c164736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 14,
+        "contract": "contracts/HydroChain.sol:HydroChain",
+        "label": "rainfallData",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_array(t_struct(RainfallData)10_storage)dyn_storage"
+      },
+      {
+        "astId": 18,
+        "contract": "contracts/HydroChain.sol:HydroChain",
+        "label": "userPoints",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 22,
+        "contract": "contracts/HydroChain.sol:HydroChain",
+        "label": "userSubmissions",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_uint256)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_struct(RainfallData)10_storage)dyn_storage": {
+        "base": "t_struct(RainfallData)10_storage",
+        "encoding": "dynamic_array",
+        "label": "struct HydroChain.RainfallData[]",
+        "numberOfBytes": "32"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_struct(RainfallData)10_storage": {
+        "encoding": "inplace",
+        "label": "struct HydroChain.RainfallData",
+        "members": [
+          {
+            "astId": 3,
+            "contract": "contracts/HydroChain.sol:HydroChain",
+            "label": "timestamp",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 5,
+            "contract": "contracts/HydroChain.sol:HydroChain",
+            "label": "rainfallAmount",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 7,
+            "contract": "contracts/HydroChain.sol:HydroChain",
+            "label": "contributor",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address"
+          },
+          {
+            "astId": 9,
+            "contract": "contracts/HydroChain.sol:HydroChain",
+            "label": "validated",
+            "offset": 20,
+            "slot": "2",
+            "type": "t_bool"
+          }
+        ],
+        "numberOfBytes": "96"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
